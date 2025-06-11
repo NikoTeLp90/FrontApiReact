@@ -43,7 +43,7 @@ function Login() {
         <button type="submit">Enviar</button>
 
         <h2>User credentials</h2>
-        <h3>email: nikotedev@dev.com</h3>
+        <h3>email: NikoteDev@dev.com</h3>
         <h3>password: 123456</h3>
       </form>
       {error && <p style={{color: "red"}}>{error}</p>}
