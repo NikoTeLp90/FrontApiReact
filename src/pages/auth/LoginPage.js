@@ -41,6 +41,10 @@ function Login() {
         <label htmlFor="password">Contraseña</label>
         <input type="password" name="password" id="password" onChange={handleChange} />
         <button type="submit">Enviar</button>
+
+        <h2>User credentials</h2>
+        <h3>email: nikotedev@dev.com</h3>
+        <h3>password: 123456</h3>
       </form>
       {error && <p style={{color: "red"}}>{error}</p>}
     </div>
