@@ -15,7 +15,7 @@ function Login() {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://127.0.0.1:5000/login", {
+      const response = await fetch("https://pruebaapi-yt30.onrender.com/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
@@ -42,9 +42,13 @@ function Login() {
         <input type="password" name="password" id="password" onChange={handleChange} />
         <button type="submit">Enviar</button>
 
-        <h2>User credentials</h2>
-        <h3>email: NikoteDev@dev.com</h3>
-        <h3>password: 123456</h3>
+        <h2>User admin credentials</h2>
+        <h4>email: NikoteDev@dev.com</h4>
+        <h4>password: 123456</h4>
+
+        <h2>User cliente credentials</h2>
+        <h4>email: Carlos@compra.com</h4>
+        <h4>password: 123456</h4>
       </form>
       {error && <p style={{color: "red"}}>{error}</p>}
     </div>
