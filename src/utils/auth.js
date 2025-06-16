@@ -13,7 +13,7 @@ export const getUserRole = () => {
   }
 };
 
-const logout = async () => {
+export const logout = async () => {
   try {
     const response = await fetch('https://pruebaapi-yt30.onrender.com/logout', {
       method: 'POST',
