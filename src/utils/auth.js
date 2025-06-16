@@ -24,7 +24,7 @@ export const logout = async () => {
 
     if (response.ok) {
       // Borra el token del localStorage
-      localStorage.removeItem('access_token');
+      localStorage.removeItem('token');
       // Redirige al login o home
       window.location.href = '/';
     } else {
