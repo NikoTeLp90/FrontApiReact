@@ -14,6 +14,7 @@ export const getUserRole = () => {
 };
 
 export const logout = async () => {
+  console.log("Ejecutando logout");  // <--- DEBUG
   try {
     const response = await fetch('https://pruebaapi-yt30.onrender.com/logout', {
       method: 'POST',
@@ -24,6 +25,7 @@ export const logout = async () => {
 
     if (response.ok) {
       // Borra el token del localStorage
+      console.log("Logout exitoso. Borrando token")
       localStorage.removeItem('token');
       // Redirige al login o home
       window.location.href = '/';
